@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-app="d2d">
+  <head>
+    <meta charset="utf-8">
+    <title>Deals 2 Digits</title>
+    <link rel="stylesheet" href="view/css/styles.css">
+    <link rel="icon" type="image/png" href="http://s20.postimg.org/f43m8srmh/Chat_Icon.png">
+    <!-- <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="view/css/bootstrap/css/bootstrap-theme.css"> -->
+  </head>
+  <body ng-controller="textCtrl">
+
+    <header-directive></header-directive>
+
+    <section class="main-view">
+      <div ui-view></div>
+    </section>
+
+
+    <!-- AngularJS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.min.js"></script>
+    <!-- Angular UI Routers -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.js"></script>
+    <!-- JQuery -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- Bootstrap -->
+        <!-- <script src="view/css/bootstrap/js/bootstrap.js"></script> -->
+
+    <!-- Local -->
+      <script src="components/d2d.js"></script>
+    <!-- Directives -->
+      <script src="components/directives/headerDirective.js"></script>
+    <!-- Controllers -->
+      <script src="components/controllers/textCtrl.js"></script>
+    <!-- Services -->
+      <script src="components/services/textService.js"></script>
+
+  </body>
+</html>
