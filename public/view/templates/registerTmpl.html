@@ -1,0 +1,89 @@
+<section class="signup-page">
+
+    <div class="wrapper">
+        <div class="header header-filter" style="background-image: url('http://s20.postimg.org/sz0mm689p/photo_1430760814266_9c81759e5e55_1.jpg'); background-size: cover; background-position: top center;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4  col-sm-6">
+                        <div class="card card-signup">
+                            <form class="form" method="" action="">
+                                <div class="header header-primary text-center">
+                                    <h4>Sign Up</h4>
+                                    <p>It's free and simple.</p>
+                                </div>
+
+                                <div class="content">
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                          <i class="material-icons">account_circle</i>
+                                        </span>
+                                        <div class="form-group">
+                                            <input type="text" ng-model="newBusinessUser.companyName" class="form-control" placeholder="Company name...">
+                                        </div>
+                                    </div>
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                          <i class="material-icons">email</i>
+                                        </span>
+                                        <div class="form-group">
+                                            <input type="text" ng-model="newBusinessUser.email" class="form-control" placeholder="Email...">
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="input-group">
+                                        <span class="input-group-addon">
+                                          <i class="material-icons">stay_current_portrait</i>
+                                        </span>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control"placeholder="No spaces or dashes">
+                                        </div>
+                                    </div> -->
+
+                                    <div class="input-group">
+                                        <span class="input-group-addon">
+                                          <i class="material-icons">lock_outline</i>
+                                        </span>
+                                        <div class="form-group">
+                                            <input type="password" ng-model="newBusinessUser.password" placeholder="Password..." class="form-control" />
+                                        </div>
+                                    </div>
+
+                                    <!-- If you want to add a checkbox to this form, uncomment this code
+
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox" name="optionsCheckboxes" checked>
+                  Subscribe to newsletter
+                </label>
+              </div> -->
+                                </div>
+                                <div class="footer text-center">
+
+                                    <a ng-click="register()" class="btn btn-primary btn-wd btn-lg">Register</a>
+                                    <br/>
+                                    <a ui-sref="login" class="btn btn-default btn-sm">or log in</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="copyright pull-center">
+                        &copy; 2016 trextr
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+
+    </div>
+</section>
