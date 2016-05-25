@@ -1,5 +1,5 @@
 angular.module("d2d")
-  .controller("businessProfileCtrl", function($scope, businessUser, businessLoginService, $state){
+  .controller("dealsCtrl", function($scope, businessUser, businessLoginService, $state){
 
     $scope.businessUser = businessUser;
 
@@ -9,23 +9,23 @@ angular.module("d2d")
       });
     };
 
-$scope.test = "test";
 
-
-//TEXT//
-    $scope.sendText = function(message){
-
-      var newMessage = {
-        to: ["+18017104549", "+14356507661"],
-        from: "+18015099562",
-        message: message
-      };
-
-      businessLoginService.sendText(newMessage).then(function(resp){
-        $scope.message = resp;
-      });
-    };
-
+//
+//
+// //TEXT//
+//     $scope.sendText = function(message){
+//
+//       var newMessage = {
+//         to: ["+18017104549", "+14356507661"],
+//         from: "+18015099562",
+//         message: message
+//       };
+//
+//       businessLoginService.sendText(newMessage).then(function(resp){
+//         $scope.message = resp;
+//       });
+//     };
+//
     $(".datepicker").datepicker({
       weekStart:1
     });
@@ -41,6 +41,7 @@ $scope.test = "test";
 
     $scope.showDeals = function(){
       businessLoginService.getDeals().then(function(resp){
+        console.log(resp);
         $scope.currentDeals = resp;
       });
     };

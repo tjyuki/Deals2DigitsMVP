@@ -10,6 +10,7 @@ var config = require("./config.js");
 //CONTROLLERS//
 var textCtrl = require("./backend/controllers/textCtrl.js");
 var businessUserCtrl = require("./backend/controllers/businessUserCtrl.js");
+var dealsCtrl = require("./backend/controllers/dealsCtrl.js");
 //SERVICES//
 var passport = require("./backend/services/passport.js");
 
@@ -51,6 +52,12 @@ app.get("/logout", function(req, res, next) {
   req.logout();
   return res.status(200).send("logged out");
 });
+
+//BUSINESS DEALS//
+app.post("/deals", dealsCtrl.postNewDeal);
+app.get("/deals", dealsCtrl.getDeals);
+app.put("/deals/:id", dealsCtrl.updateDeal);
+app.delete("/deals", dealsCtrl.deleteDeal);
 
 //CONNECTIONS//
 var mongoURI = config.MONGO_URI;

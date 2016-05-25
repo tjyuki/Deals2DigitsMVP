@@ -61,6 +61,41 @@ p {
 .copyright {
   text-align: center;
 }
+
+/*BUSINESS PROFILE PAGE*/
+
+.deal-poster {
+  background-color: rgba(59, 215, 135, 0.35);
+  color: #2d2b29;
+  padding: 15px;
+  border-radius: 25px;
+}
+
+.datepicker {
+  text-align: center;
+}
+
+.message-sender {
+  border-top: lightgray solid 2px;
+  padding-top: 25px;
+  color: #2d2b29;
+}
+
+.deals-display {
+  color: black;
+  margin: 40px;
+  padding: 10px;
+  background: raised;
+  border: solid darkgray 1px;
+  border-radius: 15px;
+}
+
+.deals-display img {
+  display: flex;
+  justify-content: center;
+
+}
+
 /*FOOTER*/
 
 .footer a {

@@ -1,0 +1,73 @@
+<section class="profile-page">
+    <div class="wrapper">
+        <div class="header header-filter" style="background-image: url('http://s20.postimg.org/u5h142lwd/city_Background.jpg');"></div>
+
+        <div class="main main-raised">
+            <div class="profile-content">
+                <div class="container">
+                    <div class="row">
+                        <div class="profile">
+
+                            <div class="name">
+                                <h3 class="title">Current Deals</h3>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="row">
+                        <div class="nav-align-center">
+
+                            <div class="col-md-12">
+                                <div class="deals-display" ng-repeat="deal in currentDeals track by $index">
+                                    <img src="http://s20.postimg.org/x37gxi7dp/imagesteps1.png" class="img-rounded img-responsive img-raised">
+
+                                    <h4>{{deal.title}} | {{deal.location}}</h4>
+                                    <p>{{deal.description}}</p>
+                                    <p><span class="label label-danger">When:</span> {{deal.startDay}}-{{deal.endDay}}</p>
+                                    
+                                </div>
+
+                            </div>
+                            <!-- <div class="deals-display" ng-repeat="deal in currentDeals track by $index">
+                                <div class="container">
+                                  <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="http://s20.postimg.org/x37gxi7dp/imagesteps1.png" class="img-rounded img-responsive img-raised">
+                                    </div>
+                                    <div class="col-md-8">
+                                        {{deal.title}}......... {{deal.location}}
+                                        <br> {{deal.description}}
+                                    </div>
+
+                                </div>
+
+
+
+
+                              </div>
+                            </div> -->
+                            <div class="logout-button text-center">
+                                <a class="btn" ng-click="logout()">Log out</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="copyright pull-center">
+                &copy; 2016 trextr
+            </div>
+        </div>
+    </footer>
+
+
+</section>

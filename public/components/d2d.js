@@ -44,7 +44,17 @@ angular.module("d2d", ["ui.router"])
 
     .state("browse-deals", {
       url: "/deals",
-      templateUrl: "../view/templates/browseDealsTmpl.html"
+      templateUrl: "../view/templates/browseDealsTmpl.html",
+      controller: "dealsCtrl",
+      resolve: {
+        businessUser: function(businessLoginService, $state) {
+          return businessLoginService.getBusinessUser().then(function(resp){
+            return resp.data;
+          }).catch(function(err){
+            $state.go("login");
+          });
+        }
+      }
     });
 
 
