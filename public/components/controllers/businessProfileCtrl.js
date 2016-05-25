@@ -16,7 +16,7 @@ $scope.test = "test";
     $scope.sendText = function(message){
 
       var newMessage = {
-        to: ["+18017104549", "+14356507661"],
+        to: ["+18017104549", "+18012599859", "18015051100"],
         from: "+18015099562",
         message: message
       };
