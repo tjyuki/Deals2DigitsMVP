@@ -10,22 +10,6 @@ angular.module("d2d")
     };
 
 
-//
-//
-// //TEXT//
-//     $scope.sendText = function(message){
-//
-//       var newMessage = {
-//         to: ["+18017104549", "+14356507661"],
-//         from: "+18015099562",
-//         message: message
-//       };
-//
-//       businessLoginService.sendText(newMessage).then(function(resp){
-//         $scope.message = resp;
-//       });
-//     };
-//
     $(".datepicker").datepicker({
       weekStart:1
     });

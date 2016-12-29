@@ -11,12 +11,16 @@ angular.module("d2d")
 
 $scope.test = "test";
 
+$scope.clear = function (message){
+  message.value = "";
+};
 
 //TEXT//
-    $scope.sendText = function(message){
+
+    $scope.sendText = function(message, number){
 
       var newMessage = {
-        to: ["+18017104549", "+18012599859", "18015051100"],
+        to: ["+18017104549", "+14356507661", "+1" + number.toString()],
         from: "+18015099562",
         message: message
       };
@@ -24,6 +28,7 @@ $scope.test = "test";
       businessLoginService.sendText(newMessage).then(function(resp){
         $scope.message = resp;
       });
+
     };
 
     $(".datepicker").datepicker({
